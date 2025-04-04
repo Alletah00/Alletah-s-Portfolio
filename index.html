@@ -6,6 +6,7 @@
     <title>Software Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
 
 </head>
 <body>
@@ -21,19 +22,22 @@
     </header>
 
     <div class="intro-container">
-        <p>Hi, my name is <strong>Alletah Maaroganye</strong>, an aspiring <br>
-        <small>Software Developer | Graphic Designer | Freelancer</small></p>
+        <p><span id="typing-text"></span><span class="cursor"></span></p>
     </div>
 
     <section id="about-me">
         <div class="about-container">
-            <img src="images/girl_11759805.png" alt="Alletah Maaroganye">
+            <img src="images/IMG_9177.jpg" alt="Alletah Maaroganye">
             <div class="bio">
                 <h2>About Me</h2>
-                <p>I'm a passionate Software Developer and Graphic Designer with a love for creativity and problem-solving. 
-                With experience in web development, software design, and digital art, I aim to build meaningful and user-friendly applications. 
-                Currently, I'm exploring AI-powered development and cloud technologies.</p>
-                <p>Looking for remote job opportunities to grow my expertise and contribute to impactful projects.</p>
+                <p>I'm an enthusiastic graphic designer and software developer who enjoys being creative and solving problems.
+                 Having worked in digital graphics, software design, and web development, my goal is to create applications that are both useful and easy to use.</p>
+                 <p> Currently, I'm exploring AI-powered development and cloud technologies to stay ahead in the ever-evolving tech landscap
+                    I'm particularly drawn to projects that blend technology with human-centered design, and I thrive in collaborative environments where innovation and impact go hand in hand. 
+                    I'm also a quick learner who enjoys tackling new challenges and turning ideas into polished, functional solutions.</p>
+
+                 <p>I'm actively searching for remote possibilities to expand my knowledge, work on worthwhile initiatives,
+                     and keep coming up with experiences that change the world..</p>
                 <p>📍 South Africa</p>
             </div>
         </div>
@@ -64,7 +68,8 @@
                      <h3>Freelance Graphic Designer</h3>
                     <div class="flip-card-front" style="background-image: url('images/idea_6049830.png');"></div>
                     <div class="flip-card-back">
-                        <p>Jaybeezz Trading & Projects</p>
+                        <p>Jaybeezz Trading & Projects <a href="https://jaybeezzztradingandprojects.com/" target="_blank">Visit Website</a></p>
+                    </p>
                         <ul>
                             <li>Designed branding materials and Cricut gift sets.</li>
                             <li>Developed marketing visuals for multiple clients.</li>
@@ -92,7 +97,9 @@
                     <h3>Portfolio Website</h3>
                     <div class="flip-card-front" style="background-image: url('images/branding_6049646.png');"></div>
                     <div class="flip-card-back">
-                        <p>Designed & Developed a Personal Portfolio</p>
+                        <p>Designed & Developed a Personal Portfolio <a href="images/Proclive Graphics Portfolio .pdf.pdf" download="Aletta_Maaroganye_Resume.pdf">
+                             Portfolio                 
+                                   </a></p>
                         <ul>
                             <li>Showcasing software projects and graphic design work.</li>
                             <li>Built using HTML, CSS, and JavaScript.</li>
@@ -102,7 +109,6 @@
             </div>
         </div>
     </section>
-
     <section id="skills-education">
         <div class="container">
             <div class="box">
@@ -116,7 +122,7 @@
             <div class="divider"></div>
             <div class="box">
                 <h2>Education</h2>
-                <p>Diploma in Information Technology - Software Development<br>Rosebank College</p>
+                <p>Diploma in Information Technology - Software Development<br>Rosebank College<br>202X-202X</p>
                 <button>
                     <a href="c:\Users\sosit\OneDrive\Documents\Aletta Maaroganye Resume.docx" download>Download Resume</a>
                 </button>
@@ -129,22 +135,21 @@
         <div class="contact-container">
             <form action="/submit-form.php" method="post">
                 <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your name" required>
                 
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-                
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required>
                 <label for="country">Country</label>
                 <select id="country" name="country">
+                    <option value="" disabled selected>Select Country</option>
                     <option value="South Africa">South Africa</option>
                     <option value="Canada">Canada</option>
                     <option value="Kenya">Kenya</option>
                 </select>
+                <label for="smessage"></label>
+                <textarea id="smessage" name="smessage" placeholder="Send Message" required style="width: 100%; height: 100px; font-size: 16px;"></textarea>
                 <input type="submit" value="Submit">
             </form>
-
-           
-        
     </section>
 
     <footer>
@@ -152,29 +157,28 @@
 
         <nav>
                  <p>
-                <img src="images/mail_2772306.png" alt="LinkedIn Profile" width="20">
-                Email:
-                <a href="mailto:proclivegraphics@gmail.com">proclivegraphics@gmail.com</a>
+                 <a href="mailto:proclivegraphics@gmail.com">              
+              <img src="images/mail_2772306.png" alt="Email" width="20"></a>
 
             </p>
             <p>
-                <img src="images/linkedin_3536505.png" alt="LinkedIn Profile" width="20">
-                Linkedin:
-                <a href="https://www.linkedin.com/in/alettah-maaroganye-785329278" target="_blank"> Get in touch
+                <a href="https://www.linkedin.com/in/alettah-maaroganye-785329278" target="_blank">
+                    <img src="images/linkedin_3536505.png" alt="LinkedIn Profile" width="20">
+                    
+                  </a>
+                  
                 </a>
             </p>
             <p>
                 
-                <img src="images/instagram_2111463.png" alt="LinkedIn Profile" width="20">
-                Instagram:
-                <a href="https://www.instagram.com/proclive_graphics/" target="_blank">Explore
+               <a href="https://www.instagram.com/proclive_graphics/" target="_blank">
+                <img src="images/instagram_2111463.png" alt="Instagram" width="20">
                 </a>
+
             </p>
             <p>              
-            
-                <img src="images/github_3291667.png" alt="GitHub Profile" width="20">
-                GitHub:
-                <a href="https://github.com/" target="_blank"> Repos
+                <a href="https://github.com/" target="_blank"> 
+                <img src="images/github_3291667.png" alt="Git" width="20">
                 </a>
             </p>
 
